@@ -3,44 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="style.css">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <meta name="description" content="Personal portfolio website showcasing my projects and skills">
+  <title>Home - My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-<header>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-brand">MySite</div>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">My Portfolio</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="pages/about.html" class="nav-link">About</a></li>
+        <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
+        <li><a href="pages/resume.html" class="nav-link">Resume</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </nav>
-</header>
 
-<main id="main">
-  <section class="hero">
-    <img class="profile" src="img/profile.jpg" alt="Profile Photo">
-    <div class="hero-text">
-      <h1>Medina Radjabova</h1>
-      <p>I am a first-year CS major student in ADA Universtiy </p>
-      <p class="cta"><a href="projects.html">See my projects</a></p>
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <img src="images/profile.jpg" alt="Profile Photo" class="profile-image">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Full-Stack Developer | Computer Science Enthusiast | Problem Solver</p>
+      <p>
+        I'm a passionate developer dedicated to creating elegant solutions to complex problems.
+        This portfolio showcases my projects, skills, and experiences in web development.
+      </p>
+
+      <!-- SOCIAL LINKS -->
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://codecademy.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Codecademy">
+          <i class="fab fa-codepen"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your.email@example.com" class="social-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <a href="pages/about.html" class="btn">Learn More About Me</a>
+    </section>
+
+    <!-- FEATURED PROJECTS PREVIEW -->
+    <section>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="card">
+          <img src="images/project1.jpg" alt="Project 1" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Project 1</h3>
+            <p class="card-description">
+              A comprehensive project showcasing my skills in [Technology Stack]. 
+              This project demonstrates [key features and accomplishments].
+            </p>
+            <div class="card-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a href="pages/projects.html" class="btn" style="margin-top: 1rem;">View Details</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+          <img src="images/project2.jpg" alt="Project 2" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Hour of Code Project</h3>
+            <p class="card-description">
+              An interactive coding project developed during the Hour of Code event.
+              This demonstrates my commitment to continuous learning and development.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Algorithm</span>
+              <span class="tag">Game Dev</span>
+            </div>
+            <a href="pages/projects.html" class="btn" style="margin-top: 1rem;">View Details</a>
+          </div>
+        </div>
+
+        <!-- Additional Project -->
+        <div class="card">
+          <img src="images/project3.jpg" alt="Project 3" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Another Project</h3>
+            <p class="card-description">
+              A showcase of [project type]. This project highlights my ability to
+              [technical skills and problem-solving approach].
+            </p>
+            <div class="card-tags">
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+              <span class="tag">Database</span>
+            </div>
+            <a href="pages/projects.html" class="btn" style="margin-top: 1rem;">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section style="text-align: center; margin-top: 4rem; padding: 2rem; background-color: var(--bg-white); border-radius: 10px;">
+      <h2 style="margin-bottom: 1rem;">Ready to Work Together?</h2>
+      <p style="margin-bottom: 1.5rem; color: var(--text-light);">
+        I'm always open to new opportunities and collaborations. Feel free to reach out!
+      </p>
+      <a href="mailto:your.email@example.com" class="btn">Get In Touch</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Connect With Me</h4>
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://codecademy.com" target="_blank" rel="noopener noreferrer" title="Codecademy">
+            <i class="fab fa-codepen"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:your.email@example.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="pages/about.html" class="footer-link">About</a>
+          <a href="pages/projects.html" class="footer-link">Projects</a>
+          <a href="pages/resume.html" class="footer-link">Resume</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Repository</h4>
+        <div class="footer-links">
+          <a href="https://github.com/YOUR_USERNAME/my-wabe-page" target="_blank" rel="noopener noreferrer" class="footer-link">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+      </div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer>
-  <a href="https://github.com/Dina2008-la" target="_blank" rel="noopener"><img src="img/github.svg" class="icon" alt="GitHub"></a>
-  <a href="https://www.codecademy.com/profiles/mega2985720720" target="_blank" rel="noopener"><img src="img/codecademy.svg" class="icon" alt="Codecademy"></a>
-  <span class="spacer">|</span>
-  <a href="https://github.com/Dina2008-la" target="_blank" rel="noopener">Website repo</a>
-</footer>
-
-<script src="back.js"></script>
-
+  <!-- FONT AWESOME FOR ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- SCRIPT -->
+  <script src="js/script.js"></script>
 </body>
 </html>
